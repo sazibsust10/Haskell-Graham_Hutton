@@ -1,0 +1,3 @@
+2. Work through the examples from this chapter using Hugs.
+
+Answer: Nothing to solve here... it should be practiced by your own. 
