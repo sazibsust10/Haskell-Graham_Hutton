@@ -1,0 +1,18 @@
+5. Show how the library function init that removes the last element from
+a non-empty list could similarly be deﬁned in two diﬀerent ways.
+
+
+Answer: 
+init [1,2,3,4,5,6]
+=> [1,2,3,4,5]
+
+Definition 1: 
+init [] = *** Exception: Prelude.init: empty list
+init [ [] : x] = []
+init [xs  : x] = [xs]
+
+
+Definition 2:
+init [] = *** Exception: Prelude.init: empty list
+init [ [] : x] = []
+init [xs] = take (length [xs] - 1) [xs]

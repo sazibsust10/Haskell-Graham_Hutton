@@ -9,3 +9,24 @@ Answer:
 last [1,2,3,4,5]
 => 5
 
+Definition: 1
+------------------------
+mylast [] = Nothing
+mylast (x:[]) = Just x
+mylast (x:xs) = mylast xs
+
+
+
+Definition: 2
+------------------------
+last [] = "Exception: Prelude.last: empty list"
+last [x:[]] = x
+last [xs] = [xs] !! (length xs - 1)
+
+
+Definition: 3
+------------------------
+last [] = "Exception: Prelude.last: empty list"
+last [x:[]] = x
+last [xs] = head (reverse [xs])
+
