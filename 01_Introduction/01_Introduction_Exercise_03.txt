@@ -1,0 +1,15 @@
+-- 3. Define a function product that produces the product of a list of
+--    numbers, and show using your definition that product [ 2, 3, 4 ] = 24.
+
+Definition: 
+Let, 
+product[] = 1
+product[a:as] = a x product as
+
+Now, product[2,3,4]
+=> 2 x (product[3,4])
+=> 2 x (3 x (product[4]))
+=> 2 x (3 x (4 x (product[])))
+=> 2 x 3 x 4 x 1
+=> 24
+

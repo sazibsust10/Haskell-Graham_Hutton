@@ -1,0 +1,13 @@
+-- 2. Show that sum [x]=x for any number x.
+
+Definition: 
+sum [] = 0
+sum [x:xs] = x + sum[xs]
+
+Now, sum [x]
+=>sum x:[]
+=> x + (sum [])
+=> x + 0
+=> x
+
+(proved)

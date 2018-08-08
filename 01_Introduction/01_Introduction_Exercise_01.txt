@@ -1,0 +1,34 @@
+-- 1. Give another possible calculation for the result of double (double 2).
+
+Definition 1:
+Let, double x = 2x
+
+Way 1: 
+double(double 2)
+=> double(2 x 2)
+=> double(4)
+=> 2 x 4
+=> 8
+
+Way 2:
+double(double 2)
+=> 2 x (double 2)
+=> 2 x 2 x 2
+=> 8
+
+Definition 2:
+Let, double x = x + x
+
+Way 1: 
+double(double 2)
+=> double(2 + 2)
+=> double(4)
+=> 4 + 4
+=> 8
+
+Way 2:
+double(double 2)
+=> (double 2) + (double 2)
+=> (2 + 2) + (2 + 2)
+=> 8
+ 
