@@ -1,0 +1,21 @@
+1. Using library functions, define a function halve :: [a ] → ([a ], [a]) that
+splits an even-lengthed list into two halves. For example:
+
+Prelude > halve [1, 2, 3, 4, 5, 6]
+([1, 2, 3], [4, 5, 6])
+
+
+Answer:
+
+Definition 1:
+
+halve :: [a] -> [[a],[a]]
+halve xs = (take ((length xs) / 2) xs, drop ((length xs) / 2) xs)
+
+
+Definition 2:
+halve :: [a] -> [[a],[a]]
+halve xs = (take n xs, drop n xs)
+			where n = div (length xs) 2
+
+

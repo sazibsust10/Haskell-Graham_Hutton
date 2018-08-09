@@ -1,0 +1,16 @@
+04. Redefine the following version of the conjunction operator using conditional expressions rather than pattern matching:
+	True ∧ True = True
+	_ ∧ _ = False
+
+
+Answer:
+
+This is the definition of Logical "and"
+
+
+myAnd :: Bool->Bool->Bool
+
+myAnd a b = if a == True && b == True then True
+		else False
+
+

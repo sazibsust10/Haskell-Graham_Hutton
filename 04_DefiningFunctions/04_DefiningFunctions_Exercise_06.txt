@@ -1,0 +1,19 @@
+6. Show how the curried function definition "mult x y z = x ∗ y ∗ z" can be
+understood in terms of lambda expressions.
+
+
+
+Example of Lambda Exp According to the Chapter:
+add 	:: Int -> Int -> Int
+add x y = x + y
+add = \x -> (\y -> x + y)
+
+
+
+Answer: 
+myMult 	:: Int -> Int -> Int -> Int
+myMult = \x -> (\y -> (\z -> x * y * z))
+
+
+
+

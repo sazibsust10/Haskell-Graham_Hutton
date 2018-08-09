@@ -1,0 +1,29 @@
+3. In a similar way to ∧, show how the logical disjunction operator ∨ can
+be defined in four different ways using pattern matching.
+
+Answer: 
+
+(∨) :: Bool → Bool → Bool
+
+i)
+True ∨ True = True
+True ∨ False = True
+False ∨ True = True
+False ∨ False = False
+
+ii)
+True ∨ _ = True
+_ ∨ _ = False
+
+
+iii)
+False ∨ b = b
+True ∨ _  = True
+
+
+iv)
+a ∨ b 	| a == True = a
+		| b == True	= b
+		| otherwise = False
+
+
