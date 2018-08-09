@@ -1,0 +1,4 @@
+3. Check your answers to the preceding two questions using Hugs.
+
+Answer: 
+Nothing to solve here. Do it yourself. 

@@ -1,0 +1,16 @@
+1. What are the types of the following values?
+
+[’a’, ’b’, ’c’]
+(’a’, ’b’, ’c’)
+[(False, ’O’), (True, ’1’)]
+([False, True ], [’0’, ’1’])
+[tail, init, reverse ]
+
+Answers: 
+
+[’a’, ’b’, ’c’] 				:: [Char] 				//List of characters
+(’a’, ’b’, ’c’)					:: (Char, Char, Char)	//Tuple
+[(False, ’O’), (True, ’1’)]		:: [(Bool, Char)]		//List of Tuple
+([False, True ], [’0’, ’1’])	:: ([Bool], [Char])		//Tuple of List
+[tail, init, reverse ]			:: [[a]->[a]]			//List of Functions
+
