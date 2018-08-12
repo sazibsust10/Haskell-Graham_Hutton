@@ -12,3 +12,7 @@ myAnd a b = if a == False then False
 
 		
 myMult = \x -> (\y -> (\z -> x * y * z))
+
+
+
+myConcats xss = [x | xs <- xss , x <- xs]
