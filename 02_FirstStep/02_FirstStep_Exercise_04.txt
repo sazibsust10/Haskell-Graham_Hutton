@@ -12,7 +12,7 @@ last [1,2,3,4,5]
 Definition: 1
 ------------------------
 mylast [] = Nothing
-mylast (x:[]) = Just x
+mylast (x:[]) = Just x [ shudhu x hobe na ai khane ?]
 mylast (x:xs) = mylast xs
 
 
